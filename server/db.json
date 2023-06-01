@@ -1,0 +1,130 @@
+{
+  "projects": [
+  {
+    "projectId": 1,
+    "businessId": 1,
+    "image": "https://theressa.net/images/projects/5d7edac18901d-ResizerImage3600X1800.jpg",
+    "title": "Remodelación y ampliación de una Casa en San Isidro - Lima",
+    "projectManager": {
+      "photo": "https://p1.pxfuel.com/preview/914/252/853/young-man-profile-man-dream-boy.jpg",
+      "name": "Luis Miguel Porta Castañeda",
+      "description": "Diseñador de interiores innovador con 10 años de experiencia en gestión de proyectos, planificación de espacios y diseño asistido por ordenador. Capacidad demostrada para transformar las ideas de los clientes en soluciones de diseño bellas y funcionales. Hábil en combinaciones de colores, mejora de áreas y uso de materiales e iluminación, impulsando creaciones innovadoras y personalizadas"
+    },
+    "technicalSpecifications": {
+      "year": 2019,
+      "type": "residencial",
+      "duration": 30,
+      "location": "Lima",
+      "landArea": 56,
+      "projectArea": 42,
+      "numFloors": 1,
+      "design": "Arq. Martín Ramírez",
+      "team": "Arq. Sthefany Checa",
+      "interiorDesign": "Arq. Ana Alejandra Angulo Alcedo",
+      "devices": "None"
+    },
+    "gallery": [
+      "https://theressa.net/images/projects/5d7eda980fc46-f1a.jpg",
+      "https://theressa.net/images/projects/5d7edac18901d-ResizerImage3600X1800.jpg",
+      "https://theressa.net/images/projects/5d7edb59e3c1d-f16.jpg",
+      "https://theressa.net/images/projects/5d7ee3d71b656-f1c.jpg"
+    ]
+  },
+  {
+    "projectId": 2,
+    "businessId": 1,
+    "image": "https://cdn.pixabay.com/photo/2016/06/24/10/47/house-1477041_1280.jpg",
+    "title": "REMODELACIÓN DE COCINA EN LA MOLINA - LIMA",
+    "projectManager": {
+      "photo": "https://previews.123rf.com/images/whiteshoes91/whiteshoes911802/whiteshoes91180200493/96538389-arte-personas-emociones-m%C3%BAsica-4k-y-concepto-de-estilo-de-vida-el-modelo-lanzado-en-el-estudio.jpg",
+      "name": "Luis Miguel Porta Castañeda",
+      "description": "Diseñador de interiores innovador con 10 años de experiencia en gestión de proyectos, planificación de espacios y diseño asistido por ordenador. Capacidad demostrada para transformar las ideas de los clientes en soluciones de diseño bellas y funcionales. Hábil en combinaciones de colores, mejora de áreas y uso de materiales e iluminación, impulsando creaciones innovadoras y personalizadas"
+    },
+    "technicalSpecifications": {
+      "year": 2019,
+      "type": "residencial",
+      "duration": 30,
+      "location": "Lima",
+      "landArea": 56,
+      "projectArea": 42,
+      "numFloors": 1,
+      "design": "Arq. Martín Ramírez",
+      "team": "Arq. Sthefany Checa",
+      "interiorDesign": "Arq. Ana Alejandra Angulo Alcedo",
+      "devices": "3"
+    }
+  },
+  {
+    "projectId": 3,
+    "businessId": 1,
+    "image": "https://cdn.pixabay.com/photo/2016/11/18/17/20/living-room-1835923_1280.jpg",
+    "title": "Remodelación y ampliación de una Casa en San Isidro - Lima",
+    "projectManager": {
+      "photo": "https://www.crearuncurriculum.com/wp-content/uploads/2020/01/Foto-CV-1.jpg",
+      "name": "Luis Miguel Porta Castañeda",
+      "description": "Diseñador de interiores innovador con 10 años de experiencia en gestión de proyectos, planificación de espacios y diseño asistido por ordenador. Capacidad demostrada para transformar las ideas de los clientes en soluciones de diseño bellas y funcionales. Hábil en combinaciones de colores, mejora de áreas y uso de materiales e iluminación, impulsando creaciones innovadoras y personalizadas"
+    },
+    "technicalSpecifications": {
+      "year": 2019,
+      "type": "residencial",
+      "duration": 30,
+      "location": "Lima",
+      "landArea": 56,
+      "projectArea": 42,
+      "numFloors": 1,
+      "design": "Arq. Martín Ramírez",
+      "team": "Arq. Sthefany Checa",
+      "interiorDesign": "Arq. Ana Alejandra Angulo Alcedo",
+      "devices": "2"
+    }
+  },
+  {
+    "projectId": 4,
+    "businessId": 9,
+    "image": "https://cdn.pixabay.com/photo/2017/03/22/17/39/kitchen-2165756_1280.jpg",
+    "title": "Remodelación y ampliación de una Casa en San Isidro - Lima",
+    "projectManager": {
+      "photo": "https://www.crearuncurriculum.com/wp-content/uploads/2020/01/Foto-CV-1.jpg",
+      "name": "Luis Miguel Porta Castañeda",
+      "description": "Diseñador de interiores innovador con 10 años de experiencia en gestión de proyectos, planificación de espacios y diseño asistido por ordenador. Capacidad demostrada para transformar las ideas de los clientes en soluciones de diseño bellas y funcionales. Hábil en combinaciones de colores, mejora de áreas y uso de materiales e iluminación, impulsando creaciones innovadoras y personalizadas"
+    },
+    "technicalSpecifications": {
+      "year": 2019,
+      "type": "residencial",
+      "duration": 30,
+      "location": "Lima",
+      "landArea": 56,
+      "projectArea": 42,
+      "numFloors": 1,
+      "design": "Arq. Martín Ramírez",
+      "team": "Arq. Sthefany Checa",
+      "interiorDesign": "Arq. Ana Alejandra Angulo Alcedo",
+      "devices": "2"
+    }
+  },
+  {
+    "projectId": 5,
+    "businessId": 9,
+    "image": "https://primefaces.org/cdn/primevue/images/galleria/galleria1.jpg",
+    "title": "Remodelación y ampliación de una Casa en San Isidro - Lima",
+    "projectManager": {
+      "photo": "https://www.crearuncurriculum.com/wp-content/uploads/2020/01/Foto-CV-1.jpg",
+      "name": "Luis Miguel Porta Castañeda",
+      "description": "Diseñador de interiores innovador con 10 años de experiencia en gestión de proyectos, planificación de espacios y diseño asistido por ordenador. Capacidad demostrada para transformar las ideas de los clientes en soluciones de diseño bellas y funcionales. Hábil en combinaciones de colores, mejora de áreas y uso de materiales e iluminación, impulsando creaciones innovadoras y personalizadas"
+    },
+    "technicalSpecifications": {
+      "year": 2019,
+      "type": "residencial",
+      "duration": 30,
+      "location": "Lima",
+      "landArea": 56,
+      "projectArea": 42,
+      "numFloors": 1,
+      "design": "Arq. Martín Ramírez",
+      "team": "Arq. Sthefany Checa",
+      "interiorDesign": "Arq. Ana Alejandra Angulo Alcedo",
+      "devices": "None"
+    }
+  }
+  ]
+}
