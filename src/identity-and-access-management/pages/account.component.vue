@@ -22,14 +22,12 @@ export default {
     text-decoration: none;
 }
 section{
-    background: url("@/assets/account.png") no-repeat;
-    background-size: cover;
-    min-height: 700px;
-    width: 100%;
-    height: 100%;
-    display: grid;
-    place-items: center;
-    grid-template-columns: repeat(2, 1fr);
+  background: url("@/assets/account.png") no-repeat;
+  background-size: cover;
+  height: 100vh;
+  display: grid;
+  place-items: center;
+  grid-template-columns: repeat(2, 1fr);
 }
 .sign-in-btn{
   background-color: #02AA8B;

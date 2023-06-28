@@ -16,7 +16,7 @@
               </template>
               <template #caption="slotProps">
                 <span class="text-xl mb-2 font-bold" style="justify-content: center;">{{ slotProps.item.title }}</span>
-                <div @click="goToProjectDetail(slotProps.item.projectId)">
+                <div @click="goToProjectDetail(slotProps.item.id)">
                   <Button label="READ MORE" style="background-color: #02AA8B;
                   border-color: #02AA8B; padding: 8px; margin-top: 30px;"/>
                 </div>

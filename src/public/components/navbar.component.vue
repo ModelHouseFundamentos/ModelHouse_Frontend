@@ -10,23 +10,28 @@
                 <li class="navbar-link">
                     <router-link to="/remodeler">Find Remodeler</router-link>
                 </li>
-                <li class="navbar-link">
-                    <router-link to="/project">Your publish</router-link>
-                </li>
-                <li class="navbar-link">
-                  <router-link to="/request">Requests</router-link>
-                </li>
+
+              <li class="navbar-link" v-if='this.accountData == "user"'>
+                <router-link to="/request">MyRequests</router-link>
+              </li>
+              <li class="navbar-link" v-if='this.accountData == "business"'>
+                <router-link to="/request">Requests</router-link>
+              </li>
+
                 <li class="navbar-link">
                     <router-link to="/home">
-<!--                        <i class="pi pi-bell" style="color: #708090"></i>-->
-                        <i v-badge="2" class="pi pi-bell p-overlay-badge"
-                           style="font-size: 1rem; color: #708090; p-badge: 50px;" />
+                        <i v-badge="2" class="pi pi-bell p-overlay-badge" />
                     </router-link>
                 </li>
                 <li class="navbar-link">
                     <router-link to="/home">
                         <i class="pi pi-heart" style="color: #708090"></i>
                     </router-link>
+                </li>
+                <li class="navbar-link" v-if='this.account' >
+                  <router-link :to= 'this.routeProfile'>
+                    <i class="pi pi-pencil" style="color: #708090"></i>
+                  </router-link>
                 </li>
                 <li class="navbar-link" v-if='!this.account' >
                     <router-link to="/account">
@@ -36,11 +41,12 @@
               <li class="navbar-link sign-out" v-if='this.account' @click="signOut()">
                 <i class="pi pi-sign-out" style="color: #708090"></i>
               </li>
+
+
             </ul>
         </nav>
     </header>
   <TieredMenu style=" margin-top: 10px; width: 100px;" ref="menu" id="overlay_tmenu" :model="items" popup />
-
   <router-view></router-view>
 </template>
 
@@ -53,6 +59,8 @@ export default {
     data() {
         return {
             account: false,
+            accountData: null,
+            routeProfile: "",
             badgeValue: Number,
             menu: null,
             items: ref([
@@ -83,8 +91,11 @@ export default {
     this.badgeValue = 1;
   },
   created() {
+        this.routeProfile = localStorage.getItem("account")? `/user/${JSON.parse(localStorage.getItem("account")).id}/user_profile`:"",
         localStorage.getItem("account") ? this.account = localStorage.getItem("account"): null;
-        console.log(this.account);
+        console.log(JSON.parse(this.account).id);
+    this.accountData = localStorage.getItem("account")? JSON.parse(localStorage.getItem("account")).role:null;
+    console.log(JSON.parse(this.account).role);
     },
     methods:{
         signOut() {

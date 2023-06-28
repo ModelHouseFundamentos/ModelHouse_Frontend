@@ -42,7 +42,7 @@
           if (this.value) {
             console.log(JSON.parse(localStorage.getItem("account")).id);
             this.requestService.sendRequest(JSON.parse(localStorage.getItem("account")).id, this.businessId, {
-              "status": "IN_PROCESS",
+              "status": "PENDING",
               "description": this.value,
               "accepted": false
             }).then(res=>{
@@ -54,17 +54,13 @@
             this.toast.add({severity: 'success', summary: 'Request Submitted', detail: this.value, life: 3000});
           }
       },
-      openDialog(){
-       // console.log(this.businessId, JSON.parse(localStorage.getItem("account")).id)
-       if (localStorage.getItem("account") == undefined){
-         this.authorizationDialog = true;
-       }
-       // else if(this.businessId == JSON.parse(localStorage.getItem("account")).id){
-       //   this.sameBusinessDialog = true;
-       // }
-       else{
-         this.visible = true;
-       }
+      openDialog() {
+        if (localStorage.getItem("account") == undefined){
+          this.authorizationDialog = true;
+        }
+        else{
+          this.visible = true;
+        }
       },
     }
   }
@@ -72,19 +68,14 @@
 <template>
     <Button class="button" icon="pi pi-send" label="Send Request"
                 style="background-color:#02AA8B; border-color: #02AA8B;"  @click="openDialog"/>
-  <Dialog v-model:visible="authorizationDialog" modal header="You are not linked to an account" :style="{ width: '20vw' }">
-    <template #footer>
-      <p>Please</p>
-      <router-link to="/sign-in" style="text-decoration: none; color: black;">Sign-In</router-link>
-      <span> or </span>
-      <router-link to="/sign-up" style="text-decoration: none;  color: black;">Sign-Up</router-link>
-    </template>
-  </Dialog>
-<!--  <Dialog v-model:visible="sameBusinessDialog" modal header="Request Failed" :style="{ width: '20vw' }">-->
-<!--    <template #footer>-->
-<!--      <p>You can't send a request to your own business</p>-->
-<!--    </template>-->
-<!--  </Dialog>-->
+    <Dialog v-model:visible="authorizationDialog" modal header="You are not linked to an account" :style="{ width: '20vw' }">
+      <template #footer>
+        <p>Please</p>
+        <router-link to="/sign-in" style="text-decoration: none; color: black;">Sign-In</router-link>
+        <span> or </span>
+        <router-link to="/sign-up" style="text-decoration: none;  color: black;">Sign-Up</router-link>
+      </template>
+    </Dialog>
     <Dialog v-model:visible="visible" modal :header="this.requestTo" :style="{ width: '50vw'}">
       <div class="card flex justify-content-center" style="height: 400px; margin-top:20px;">
         <form @submit.prevent="visibleConfirmation = true" class="flex flex-column gap-2" :reset="resetForm">

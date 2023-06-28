@@ -40,11 +40,11 @@
         displayCustom: ref(false)
       }
     },
-    beforeCreate() {
+    beforeMount() {
       this.projectService = new ProjectListService();
-      this.projectService.getProjectById(this.$route.params.projectId, this.$route.params.id).then(res=>{
-        this.projects = res.data[0];
-        console.log(res.data);
+      this.projectService.getProjectById(this.$route.params.projectId).then(res=>{
+        this.projects = res.data;
+        console.log(this.projects);
       })
       this.responsiveOptions = ref([
         {
