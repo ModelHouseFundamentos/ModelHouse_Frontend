@@ -21,11 +21,13 @@
                 At least 2 special characters and 8 characters</div>
         </div>
         <div class="text-down">
-            <div style="font-size: 12px;">
-                you are agreeing to our <a href="https://www.termsfeed.com/live/080d7040-ea41-438c-98a1-3f5c5eeb95f0"
+            <div style="font-size: 12px; ">
+                you are agreeing to our <a style="color: black;" href="https://www.termsfeed.com/live/080d7040-ea41-438c-98a1-3f5c5eeb95f0"
             target="_blank"><b><u style="cursor: pointer;">privacy policy</u></b></a>
-                and <a href="https://www.termsfeed.com/live/a0ae1603-599a-4452-b149-e7c7223c77ae"
-            target="_blank"><b><u style="cursor: pointer;">terms of service.</u></b></a></div>
+                and <a style="color: black;"  href="https://www.termsfeed.com/live/a0ae1603-599a-4452-b149-e7c7223c77ae"
+            target="_blank"><b><u style="cursor: pointer;">terms of service.</u></b></a>
+            </div>
+          <div style="font-size: 12px;">you don't have an account? <router-link  to="/sign-up" style="color: black;"><b><u>Sign up</u></b></router-link></div>
         </div>
         <div @click="signInUser">
             <Button label="SIGN IN" style="background-color: #02AA8B;

@@ -25,7 +25,7 @@
 <template>
   <h2 style="text-align: center; position:relative;
         margin: 200px 0px 60px 0px; font-size: 50px;">{{businessProfile.name}}</h2>
-  <div class="container" style="position:relative;
+  <div class="" style="position:relative;
         margin: 50px; padding: 50px;">
     <div class="content">
       <img :src="businessProfile.image" alt="business logo choose"

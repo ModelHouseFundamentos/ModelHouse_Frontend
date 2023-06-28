@@ -14,7 +14,7 @@ export default defineConfig({
   build: {
     rollupOptions: {
       external: ['ModelHouseOfficialLogo.png',
-      'banner.png']
+      'banner.png','src/assets/area_card.png', 'src/assets/room_card.png', 'src/identity-and-access-management']
     }
   }
 })

@@ -1,10 +1,9 @@
-import axios from "axios";
-
+import http from "@/shared/services/http-common";
 export class ProjectListService {
     getProjectListByBusinessId(businessId){
-        return axios.get(`http://localhost:3000/projects?businessId=${businessId}`);
+        return http.get(`/business_profile/${businessId}/project`);
     }
-    getProjectById(projectId, businessId){
-        return axios.get(`http://localhost:3000/projects?projectId=${projectId}&businessId=${businessId}`);
+    getProjectById(id){
+        return http.get(`/project/${id}/profile`);
     }
 }

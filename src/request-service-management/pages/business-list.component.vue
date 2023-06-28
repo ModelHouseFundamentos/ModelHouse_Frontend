@@ -39,7 +39,7 @@ import { ref } from 'vue';
 import RequestForm from "@/request-service-management/pages/request-form.component.vue";
 
 export default defineComponent({
-    name: "remodeler",
+  name: "remodeler",
   components: {RequestForm},
     data() {
         return {
@@ -94,7 +94,7 @@ section{
   transition: transform 0.1s ease;
 }
 #elevator:hover {
-  //transform: translateY(-5px);
+  transform: translateY(-5px);
   transform: scale(1.03);
 }
 .button{
